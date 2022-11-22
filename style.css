@@ -1,0 +1,346 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+
+}
+
+.logo {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+}
+.logo_imagem {
+    margin-top: 1em;
+    margin-left: 5px;
+    color: white
+}
+.logo_imagem2 {
+    color: white;
+    margin-right: 10px;
+    align-self: flex-end;
+}
+
+.titulo_logo-sidebar {
+    margin-top: 1em;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+
+}
+
+.sidebar {
+    height: 100%;
+    width: 270px;
+    background-color: rgb(17, 73, 158);
+    position: fixed;
+}
+
+.ul-nav-01 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    gap: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar .ul-nav-01 li {
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+}
+
+.sidebar .ul-nav-01 li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    padding: 0.5em;
+
+}
+
+.sidebar .ul-nav-01 li a:hover {
+    background-color: rgb(144, 197, 247);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 25px;
+}
+
+.sidebar .ul-nav-01 li a .icon {
+    position: relative;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+
+}
+
+.sidebar .ul-nav-01 li a .icon ion-icon {
+    font-size: 1.30rem;
+
+}
+
+
+.titulo {
+
+    color: white;
+    text-align: center;
+    margin-left: 5px;
+
+
+}
+
+.container {
+    position: absolute;
+    width: calc(100% - 270px);
+    left: 270px;
+    min-height: 100vh;
+    transition: 0.5s;
+    margin-top: 10px;
+
+}
+
+.topbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.alternar {
+    position: relative;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.campo_buscar {
+    width: 300px;
+    padding: 0.9em;
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+    right: 30px;
+}
+
+.container .buscar ion-icon {
+    position: absolute ;
+    text-align: center;
+    top: 20px;
+}
+.imagem_perfil {
+    position: relative;
+    top: 0;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.container .topbar .alternar a {
+   color: rgb(17, 73, 158);
+}
+
+.cardbox {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    
+}
+.card {
+    position: relative;
+    background-color: white;
+    padding: 2em;
+    display: flex;
+}
+
+.titulocard {
+    color: rgb(17, 73, 158);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.paragrafocard {
+    margin-top: 10px;
+    color: gray;
+    font-weight: 500;
+}
+
+.cardbox .card .icon2 ion-icon {
+    font-size: 2rem;
+    margin-left: 70px;
+    color: gray;
+
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.details .recent-orders {
+    position: relative;
+    display: grid;
+    min-height: 300px;
+    line-height: 2.5rem;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08); 
+
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+}
+
+.cardHeader h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: dodgerblue;
+}
+
+.btn {
+    position: relative;
+    padding: 1px 10px;
+    text-decoration: none;
+    background: dodgerblue;
+    color: white;
+    border-radius: 6px;
+}
+
+.details table {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.details table thead td {
+    font-weight: 600;
+}
+
+.details .recent-orders table tr {
+color: black;
+border-bottom: 1px solid rgb(0,0,0,0.01);
+}
+
+.details .recent-orders table tbody tr:hover {
+    background-color: dodgerblue;
+    cursor: pointer;
+    transform: scale(1.025);
+    transition: 0.5s;
+    
+}
+
+.details .recent-orders table tr td:last-child {
+    text-align: end;
+}
+
+.details .recent-orders table tr td:nth-child(2) {
+    text-align: end;
+}
+
+.details .recent-orders table tr td:nth-child(3) {
+    text-align: center;
+}
+
+
+.statusdelivered {
+    padding: 2px 4px;
+    background: #8de02c;
+    color: black;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.statuspending {
+    padding: 2px 4px;
+    background: #f9ca3f;
+    color: black;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+} 
+
+.statusreturn {
+    padding: 2px 4px;
+    background: #f00;
+    color: black;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.statusinprogress {
+    padding: 2px 4px;
+    background: #1795ce;
+    color: black;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.recentCustomers {
+    position: relative;
+    display: grid;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.recentCustomers .imgBox {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.recentCustomers .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recentCustomers table tr:hover {
+    transform: scale(1.025);
+    transition: 0.5s;
+}
+
+.recentCustomers table tr td {
+    padding: 12px 10px;
+}
+
+.recentCustomers table tr td h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: dodgerblue;
+    line-height: 1.2rem;
+
+}
+
+.recentCustomers table tr td span {
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    line-height: 1.2rem;
+}
